@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipino Language and Culture</title>
+    <link rel="stylesheet" href="filipino.css">
+</head>
+<body>
+
+    <header>
+        <h1>Filipino Language and Culture</h1>
+        <p>Explore the beauty and learn Filipino!</p><br>
+        <div class="header-buttons">
+            <a href="index.html" class="back">Back to Home</a>
+            <button id="darkModeToggle">Dark Mode</button>
+        </div>
+    </header>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('about', this)">About Philippines</button>
+        <button class="tab-btn" onclick="openTab('foods', this)">Foods</button>
+        <button class="tab-btn" onclick="openTab('tourist', this)">Tourist Destination</button>
+        <button class="tab-btn" onclick="openTab('language', this)">Basic Filipino Words</button>
+    </div>
+
+    <section class="description tab-content active" id="about">
+        <h1>About the Philippines</h1>
+        <div class="image-section">
+            <img src="https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt9db8cfc0628269f5/67f67de0301cf1662d98386f/iStock-2155682462-MOBILE-HEADER.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart" alt="Philippines">
+        </div>
+        <p>
+            The Philippines is an archipelago in Southeast Asia known for its stunning beaches, vibrant culture, and warm hospitality. Major cities like Manila and Cebu are bustling with activity, while islands like Palawan and Boracay offer breathtaking scenery.
+            The country has a rich history influenced by indigenous, Spanish, and American cultures. Festivals, colorful traditions, and local music are part of everyday life. Tourists enjoy beautiful landscapes, delicious food, and friendly people.
+        </p><br><br>
+    </section>
+
+    <section class="foods tab-content" id="foods">
+        <div class="food">
+            <h1>Foods</h1><br>
+            <ul>
+                <li>Adobo<br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK6PLjBWZLxlVlLck1VtdbKTxDGnJH89WOEw&s" alt="Adobo">
+                    <p>Adobo is a popular Filipino dish made with meat marinated in vinegar, soy sauce, garlic, and spices, then simmered until tender. It is considered a national dish.</p><br>
+                    <p>Recipe</p>
+                    <ul>
+                        <li>500g chicken or pork</li>
+                        <li>1/2 cup vinegar</li>
+                        <li>1/4 cup soy sauce</li>
+                        <li>4 cloves garlic, minced</li>
+                        <li>2 bay leaves</li>
+                        <li>1 tsp black peppercorns</li>
+                    </ul>
+                    <p>Instructions: Marinate meat in vinegar, soy sauce, garlic, bay leaves, and peppercorns for at least 30 minutes. Simmer in the marinade until tender.</p><br>
+                </li>
+                <li>Sinigang<br>
+                    <img src="https://www.kawalingpinoy.com/wp-content/uploads/2013/01/sinigang-baboy-7-500x500.jpg" alt="Sinigang">
+                    <p>Sinigang is a sour soup typically made with pork or fish and various vegetables, flavored with tamarind or other souring agents. It is comforting and widely loved.</p><br>
+                    <p>Recipe</p>
+                    <ul>
+                        <li>500g pork ribs or fish</li>
+                        <li>1 pack tamarind soup base</li>
+                        <li>1 onion, quartered</li>
+                        <li>2 tomatoes, quartered</li>
+                        <li>Assorted vegetables (radish, eggplant, okra, kangkong)</li>
+                    </ul>
+                    <p>Instructions: Boil pork or fish with onion and tomatoes, add tamarind soup base, and cook vegetables until tender.</p><br>
+
+                </li>
+                <li>Lechon<br>
+                    <img src="https://cdn.tasteatlas.com/Images/Dishes/5eb9df1828d84079a850ebe462e28121.jpg?m=facebook" alt="Lechon">
+                    <p>Lechon is a whole roasted pig with crispy skin, commonly served during special occasions and celebrations in the Philippines.</p><br>
+                    <p>Recipe</p>
+                    <ul>
+                        <li>1 whole pig (about 20-30 kg)</li>
+                        <li>Salt and pepper</li>
+                        <li>Lemongrass, garlic, and other herbs for stuffing</li>
+                    </ul>
+                    <p>Instructions: Season the pig inside and out, stuff with herbs, tie the legs, and roast until golden brown and crispy.</p><br>
+                </li>
+                <li>Pancit<br>
+                    <img src="https://www.whats4eats.com/wp-content/uploads/2023/04/pastas-pancit-bihon-flickr-dbgg1979-3852511838-4x3-1.jpg" alt="Pancit">
+                    <p>Pancit refers to various types of Filipino noodle dishes, often stir-fried with vegetables, meat, and seafood. It is commonly eaten during birthdays for long life.</p><br>
+                    <p>Recipe</p>
+                    <ul>
+                        <li>200g rice noodles or egg noodles</li>
+                        <li>2 tbsp oil</li>
+                        <li>2 cloves garlic, minced</li>
+                        <li>1 onion, sliced</li>
+                        <li>Assorted vegetables (carrots, cabbage, green beans)</li>
+                        <li>200g chicken, pork, or shrimp</li>
+                    </ul>
+                    <p>Instructions: Sauté garlic and onion, cook meat, add vegetables, and
+                </li>
+                <li>Halo-halo<br>
+                    <img src="https://www.thespruceeats.com/thmb/bqq_P7YZtu4Br9kPHqVkjib1QhQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/halo-halo-5409582-step-08-18bca395e05542539cf4eb2e87fd6882.jpg" alt="Halo-halo">
+                    <p>Halo-halo is a popular Filipino dessert made with crushed ice, sweetened beans, fruits, jellies, and topped with leche flan or ice cream. It is refreshing, especially in hot weather.</p><br>
+                    <p>Recipe</p>
+                    <ul>
+                        <li>Crushed ice</li>
+                        <li>Sweetened beans (red beans, mung beans)</li>
+                        <li>Sweetened fruits (jackfruit, banana)</li>
+                        <li>Jellies (gulaman, nata de coco)</li>
+                        <li>Leche flan or ice cream for topping</li>
+                    </ul>
+                    <p>Instructions: Layer sweetened beans, fruits, and jellies in a tall glass, add crushed ice, and top with leche flan or ice cream. Serve with evaporated milk.</p><br>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="touristDestination tab-content" id="tourist">
+        <h1>Tourist Destination</h1><br>
+        <h2>1. Chocolate Hills, Bohol</h2><br><br>
+        <img src="https://biofriendlyplanet.com/app/uploads/2022/01/chocolate-hills-1.jpg" alt="Chocolate Hills"><br><br>
+        <p>The Chocolate Hills are a geological formation of over 1,200 hills covered in green grass that turns brown in the dry season. It is a famous tourist attraction in Bohol.</p><br>
+        <h2>2. Boracay Island</h2><br><br>
+        <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/12/22224603/boracay-travel-guide-philippines-beach-1350x900.jpg" alt="Boracay island"><br><br>
+        <p>Boracay is a small island known for its white sand beaches, clear blue waters, and vibrant nightlife. It is a top destination for beach lovers and tourists seeking relaxation and adventure.</p>
+    </section>
+
+    <section class="language tab-content" id="language">
+        <div class="oplang">
+            <h1>Languages</h1><br>
+            <h3>The official languages of the Philippines are Filipino (based on Tagalog) and English. Filipino is widely spoken and used in daily life, education, and media.</h3><br>
+        </div>
+
+        <div class="Basjapwo">
+            <h2>Basic Filipino Words</h2>
+
+            <div class="word">
+                <div class="native">Kamusta</div>
+                <div class="rw">Kamusta<span class="translation">How are you ?</span></div>
+                <button>Show Translation</button>
+            </div><br>
+
+            <div class="word">
+                <div class="native">Salamat</div>
+                <div class="rw">Salamat<span class="translation">Thank you</span></div>
+                <button>Show Translation</button>
+            </div><br>
+
+            <div class="word">
+                <div class="native">Paumanhin</div>
+                <div class="rw">Paumanhin<span class="translation">Excuse me / Sorry</span></div>
+                <button>Show Translation</button>
+            </div><br>
+
+            <div class="word">
+                <div class="native">Yes</div>
+                <div class="rw">Yes<span class="translation">Oo/yes</span></div>
+                <button>Show Translation</button>
+            </div><br>
+
+            <div class="word">
+                <div class="native">Hindi</div>
+                <div class="rw">Hindi<span class="translation">No</span></div>
+                <button>Show Translation</button>
+            </div><br>
+
+            <div class="word">
+                <div class="native">Pakiusap</div>
+                <div class="rw">Pakiusap<span class="translation">Please</span></div>
+                <button>Show Translation</button>
+            </div><br>
+        </div>
+    </section>
+
+    <script src="filipino.js"></script>
+</body>
+</html>

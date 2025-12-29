@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korea Language and Culture</title>
+    <link rel="stylesheet" href="korea.css">
+</head>
+<body>
+
+    <header>
+        <h1>Korea Language and Culture</h1>
+        <p>Explore the beauty and learn Korean!</p><br>
+        <div class="header-buttons">
+            <a href="index.html" class="back">Back to Home</a>
+            <button id="darkModeToggle">Dark Mode</button>
+        </div>
+    </header>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('about', this)">About Korea</button>
+        <button class="tab-btn" onclick="openTab('foods', this)">Foods</button>
+        <button class="tab-btn" onclick="openTab('tourist', this)">Tourist Destination</button>
+        <button class="tab-btn" onclick="openTab('language', this)">Basic Korean Words</button>
+    </div>
+
+    <section class="description tab-content active" id="about">
+        <h1>About Korea</h1>
+        <div class="image-section">
+            <img src="https://i.natgeofe.com/n/0f550dab-11fc-460e-a39b-030b6e5cbf06/practicalguide.jpg" alt="Korea">
+        </div>
+        <p>
+            South Korea is a country in East Asia known for its rich history, advanced technology, and vibrant culture. Cities like Seoul and Busan offer modern skyscrapers, shopping districts, and nightlife, while traditional palaces, temples, and hanok villages showcase Korea’s heritage.  
+            Korea is famous for its K-pop, traditional festivals, and unique cuisine. The country has four distinct seasons, allowing tourists to enjoy cherry blossoms in spring, beautiful mountains in autumn, and snowy landscapes in winter.
+        </p><br><br>
+    </section>
+
+    <section class="foods tab-content" id="foods">
+        <div class="food">
+            <h1>Foods</h1><br>
+            <ul>
+                <li>Kimchi<br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDuTP_CihroVbNT3i6hVHLgOcHEBfOMLfqfg&s" alt="Kimchi">
+                    <p>Kimchi is a traditional Korean fermented vegetable dish, usually made with napa cabbage and Korean radish, seasoned with chili powder, garlic, ginger, and salted seafood. It is a staple in Korean cuisine.</p><br>
+                    <p>Recipe</p>
+                    <ul>
+                        <li>1 medium napa cabbage</li>
+                        <li>1/4 cup sea salt</li>
+                        <li>4 cups water</li>
+                        <li>1 tablespoon grated ginger</li>
+                        <li>4 cloves garlic, minced</li>
+                        <li>2 tablespoons fish sauce</li>
+                        <li>1 tablespoon sugar</li>
+                        <li>3 tablespoons Korean red pepper flakes (gochugaru)</li>
+                    </ul>
+                    <p>Instructions: Cut cabbage, soak in salted water, rinse, prepare seasoning paste
+                </li>
+                <li>Bibimbap<br>
+                    <img src="https://mykoreankitchen.com/wp-content/uploads/2013/07/1.Korean-mixed-rice-Bibimbap.jpg" alt="Bibimbap">
+                    <p>Bibimbap is a mixed rice dish topped with vegetables, beef, a fried egg, and gochujang (chili pepper paste). It is a colorful and healthy meal representing Korean flavors.</p><br>
+                    <p>Recipe</p>
+                    <ul>
+                        <li>2 cups cooked white rice</li>
+                        <li>100g beef, thinly sliced</li>
+                        <li>1 carrot, julienned</li>
+                        <li>1 zucchini, julienned</li>
+                        <li>1 cup spinach, blanched</li>
+                        <li>4 shiitake mushrooms, sliced</li>
+                        <li>1 egg</li>
+                        <li>2 tablespoons gochujang (Korean chili paste)</li>
+                        <li>1 tablespoon sesame oil</li>
+                        <li>1 teaspoon soy sauce</li>
+                        <li>1 teaspoon sugar</li>
+                    </ul>
+                    <p>Instructions: Sauté vegetables, cook beef with seasoning, assemble rice bowl,
+                </li>
+                <li>Bulgogi<br>
+                    <img src="https://mykoreankitchen.com/wp-content/uploads/2015/01/2.-Korean-Bulgogi.jpg" alt="Bulgogi">
+                    <p>Bulgogi is marinated beef grilled or stir-fried with soy sauce, sugar, sesame oil, garlic, and pepper. It is a classic Korean dish enjoyed in households and restaurants.</p><br>
+                    <p>Recipe</p>
+                    <ul>
+                        <li>500g thinly sliced beef ribeye or sirloin</li>
+                        <li>4 tablespoons soy sauce</li>
+                        <li>2 tablespoons sugar</li>
+                        <li>1 tablespoon sesame oil</li>
+                        <li>3 cloves garlic, minced</li>
+                        <li>1/2 teaspoon black pepper</li>
+                        <li>1/2 onion, sliced</li>
+                        <li>2 green onions, chopped</li>
+                    </ul>
+                    <p>Instructions: Marinate beef with ingredients, grill or stir-fry until cooked,
+                </li>
+                <li>Japchae<br>
+                    <img src="https://www.hungertaskforce.org/wp-content/uploads/2023/11/vegan-japchae-683x1024-1.jpg" alt="Japchae">
+                    <p>Japchae is a stir-fried glass noodle dish mixed with vegetables, beef, and soy sauce. It is served during special occasions and is loved for its sweet and savory taste.</p><br>
+                    <p>Recipe</p>
+                    <ul>
+                        <li>200g sweet potato glass noodles (dangmyeon)</li>
+                        <li>100g beef, thinly sliced</li>
+                        <li>1 carrot, julienned</li>
+                        <li>1 bell pepper, sliced</li>
+                        <li>1 cup spinach, blanched</li>
+                        <li>4 shiitake mushrooms, sliced</li>
+                        <li>1 onion, sliced</li>
+                        <li>2 cloves garlic, minced</li>
+                        <li>3 tablespoons soy sauce</li>
+                        <li>1 tablespoon sugar</li>
+                        <li>1 tablespoon sesame oil</li>
+                        <li>1 teaspoon sesame seeds</li>
+                    </ul>
+                    <p>Instructions: Cook noodles, sauté vegetables and beef, combine with sauce,</p>
+                </li>
+                <li>Tteokbokki<br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMFQAZJ39_hJWYl1RC5JxGxik9lWVsVVbC9A&s" alt="Tteokbokki">
+                    <p>Tteokbokki is a popular street food made from chewy rice cakes cooked in a spicy-sweet gochujang sauce. It is a favorite snack across Korea.</p><br>
+                    <p>Recipe</p>
+                    <ul>
+                        <li>300g Korean rice cakes (tteok)</li>
+                        <li>4 cups water or anchovy broth</li>
+                        <li>3 tablespoons gochujang (Korean chili paste)</li>
+                        <li>1 tablespoon sugar</li>
+                        <li>1 tablespoon soy sauce</li>
+                        <li>2 cloves garlic, minced</li>
+                        <li>1 green onion, chopped</li>
+                        <li>1 boiled egg (optional)</li>
+                    </ul>
+                    <p>Instructions: Boil rice cakes in broth, add sauce ingredients, simmer until
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="touristDestination tab-content" id="tourist">
+        <h1>Tourist Destination</h1><br>
+        <h2>1. Gyeongbokgung Palace, Seoul</h2><br><br>
+        <img src="https://plus.unsplash.com/premium_photo-1661948404806-391a240d6d40?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3llb25nYm9rZ3VuZyUyMHBhbGFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="Gyeongbokgung Palace"><br><br>
+        <p>Gyeongbokgung Palace is a grand royal palace in Seoul, built in 1395. It features traditional Korean architecture, beautiful gardens, and hosts the changing of the guard ceremony, offering a glimpse into Korea’s royal history.</p><br>
+        <h2>2. Jeju Island</h2><br><br>
+        <img src="https://ca-times.brightspotcdn.com/dims4/default/40d675d/2147483647/strip/true/crop/1643x1080+0+0/resize/1200x789!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F63%2Ff2%2Fd3263df6400d9bdf95423021035a%2Fadobestock-177536059.jpeg" alt="Jeju island"><br><br>
+        <p>Jeju Island is a volcanic island known for its natural beauty, waterfalls, lava tubes, and beaches. It is a popular destination for nature lovers and those seeking a relaxing getaway.</p>
+    </section>
+
+    <section class="language tab-content" id="language">
+        <div class="oplang">
+            <h1>Languages</h1><br>
+            <h3>The official language of South Korea is Korean (Hangul). It is a phonetic language with a unique script invented in the 15th century.</h3><br>
+        </div>
+
+        <div class="Basjapwo">
+            <h2>Basic Korean Words</h2>
+
+            <div class="word">
+                <div class="native">안녕하세요</div>
+                <div class="rw">Annyeonghaseyo<span class="translation">Hello</span></div>
+                <button>Show Translation</button>
+            </div><br>
+
+            <div class="word">
+                <div class="native">감사합니다</div>
+                <div class="rw">Gamsahamnida<span class="translation">Thank you</span></div>
+                <button>Show Translation</button>
+            </div><br>
+
+            <div class="word">
+                <div class="native">죄송합니다</div>
+                <div class="rw">Joesonghamnida<span class="translation">Excuse me / Sorry</span></div>
+                <button>Show Translation</button>
+            </div><br>
+
+            <div class="word">
+                <div class="native">네</div>
+                <div class="rw">Ne<span class="translation">Yes</span></div>
+                <button>Show Translation</button>
+            </div><br>
+
+            <div class="word">
+                <div class="native">아니요</div>
+                <div class="rw">Aniyo<span class="translation">No</span></div>
+                <button>Show Translation</button>
+            </div><br>
+
+            <div class="word">
+                <div class="native">제발</div>
+                <div class="rw">Jebal<span class="translation">Please</span></div>
+                <button>Show Translation</button>
+            </div><br>
+        </div>
+    </section>
+
+    <script src="korea.js"></script>
+</body>
+</html>

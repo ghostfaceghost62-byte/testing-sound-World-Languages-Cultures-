@@ -1,0 +1,317 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== BASE ===== */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+    color: #111;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+section:not(.tab-content) {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    padding: 120px 30px;
+    background: linear-gradient(to bottom, #ffffff, #f5f5f7);
+    transition: background 0.3s, color 0.3s;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+header p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* ===== HEADER BUTTONS ===== */
+.header-buttons {
+    display: flex;          /* side by side */
+    gap: 10px;              /* space between buttons */
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* vertically aligned */
+    margin-top: 30px;
+}
+
+.header-buttons a,
+.header-buttons button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    padding: 0 22px;
+    height: 90px;           /* same height */
+    min-width: 140px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.header-buttons a {
+    background-color: #0071e3;
+    color: #fff;
+}
+
+.header-buttons a:hover {
+    background-color: #005bb5;
+}
+
+.header-buttons button {
+    background-color: #0071e3;
+    color: #fff;
+}
+
+.header-buttons button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
+
+/* ===== IMAGE SECTION ===== */
+section img {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.15);
+    transition: transform 0.6s ease, filter 0.3s;
+    margin-bottom: 20px;
+}
+
+section img:hover {
+    transform: scale(1.02);
+}
+
+/* ===== DESCRIPTION ===== */
+.description h1 {
+    font-size: 4rem;
+}
+
+.description p {
+    font-size: 1.5rem;
+    color: #444;
+}
+
+/* ===== FOOD SECTION ===== */
+.foods h1 {
+    font-size: 4rem;
+}
+
+.foods ul {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.foods li {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.foods p {
+    font-size: 1.2rem;
+}
+
+/* ===== TOURIST DESTINATION ===== */
+.touristDestination h1 {
+    font-size: 4rem;
+}
+
+.touristDestination h2 {
+    font-size: 2rem;
+}
+
+.touristDestination p {
+    font-size: 1.5rem;
+}
+
+.touristDestination ul {
+    font-size: 1.3rem;
+    margin-left: 20px;
+}
+
+/* ===== LANGUAGE SECTION ===== */
+.language {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    text-align: left;
+}
+
+.word {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.jp, .rw {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.translation {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    margin-top: 10px;
+    padding: 10px 22px;
+    border-radius: 999px;
+    border: none;
+    background-color: #0071e3;
+    color: white;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
+
+/* ===== TABS ===== */
+.tabs {
+    display: flex;
+    gap: 6px;
+    padding: 6px;
+    margin: 50px auto 0;
+    border-radius: 999px;
+    background: #f5f5f7;
+    box-shadow: inset 0 0 0 1px #ddd;
+    justify-content: center;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.tab-btn {
+    padding: 10px 22px;
+    border-radius: 999px;
+    border: none;
+    background: transparent;
+    font-size: 0.95rem;
+    color: #444;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.tab-btn:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+.tab-btn.active {
+    background: white;
+    color: #111;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.tab-content {
+    display: none;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background: linear-gradient(to bottom, #1e1e1e, #121212);
+    color: #ffffff;
+}
+
+body.dark-mode .header-buttons a,
+body.dark-mode .header-buttons button {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .header-buttons a:hover,
+body.dark-mode .header-buttons button:hover {
+    background-color: #222;
+}
+
+body.dark-mode .tabs {
+    background-color: #1a1a1a;
+    box-shadow: inset 0 0 0 1px #444;
+}
+
+body.dark-mode .tab-btn {
+    color: #ccc;
+}
+
+body.dark-mode .tab-btn.active {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .word,
+body.dark-mode .tab-content,
+body.dark-mode ul {
+    background-color: #1e1e1e;
+    color: #fff;
+    border-color: #444;
+}
+
+body.dark-mode .word .jp,
+body.dark-mode .word .rw {
+    color: #fff;
+}
+
+body.dark-mode .word .translation {
+    color: #90ee90; /* light green for dark mode */
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 768px){
+    header h1 {
+        font-size: 2.5rem;
+    }
+    .description h1,
+    .foods h1,
+    .touristDestination h1,
+    .language h1 {
+        font-size: 2.5rem;
+    }
+    .tabs {
+        flex-wrap: wrap;
+    }
+}
